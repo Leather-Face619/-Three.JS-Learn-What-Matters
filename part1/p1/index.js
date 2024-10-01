@@ -9,7 +9,7 @@ scene.add( cube );
 camera.position.z = 5;
 
 
-const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('#can')});
+const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('#can'),antialias: true});
 renderer.setSize( window.innerWidth, window.innerHeight );
 
 // Ye function har frame me cube ko ghumaata hai aur scene ko render karta hai
